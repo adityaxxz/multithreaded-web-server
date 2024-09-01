@@ -1,6 +1,6 @@
 # Multi-Threaded Web Server
 
-[/rust-book.cs.brown.edu](https://rust-book.cs.brown.edu/ch20-00-final-project-a-web-server.html)
+[rust-book.cs.brown.edu](https://rust-book.cs.brown.edu/ch20-00-final-project-a-web-server.html)
 
 A simple, multi-threaded web server implemented in Rust.
 
