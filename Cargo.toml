@@ -2,5 +2,7 @@
 name = "adra_multi_threaded_web_server"
 version = "0.1.0"
 edition = "2021"
+description = "A multi-threaded web server implemented in Rust"
+license = "MIT"
 
 [dependencies]
