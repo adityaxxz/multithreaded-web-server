@@ -4,7 +4,7 @@ use std::fs;
 use std::thread;
 use std::time::Duration;
 
-use web_server::ThreadPool;
+use adra_multi_threaded_web_server::ThreadPool;
 
 fn main() {
     let listener = TcpListener::bind("127.0.0.1:7878").unwrap();

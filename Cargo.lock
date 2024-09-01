@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "web_server"
+name = "adra_multi_threaded_web_server"
 version = "0.1.0"
