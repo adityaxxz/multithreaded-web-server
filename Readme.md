@@ -1,8 +1,10 @@
 # Multi-Threaded Web Server
 
-[rust-book.cs.brown.edu](https://rust-book.cs.brown.edu/ch20-00-final-project-a-web-server.html)
+Implementation : [rust-book.cs.brown.edu](https://rust-book.cs.brown.edu/ch20-00-final-project-a-web-server.html)
 
-A simple, multi-threaded web server implemented in Rust.
+Published on crates.io : [crates.io/adra_multi_threaded_web_server](https://crates.io/crates/adra_multi_threaded_web_server)
+
+### A simple, multi-threaded web server implemented in Rust.
 
 ## Features
 
