@@ -19,7 +19,6 @@
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
-        animation: glow 5s infinite ease-in-out;
       }
       h1 {
         color: #333;
@@ -39,20 +38,12 @@
           opacity: .3;
         }
       }
-      @keyframes glow {
-        0%, 100% {
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        50% {
-          box-shadow: 0 0 30px rgb(21, 227, 221);
-        }
-      }
     </style>
   </head>
   <body>
     <div class="container">
       <h1 onclick="searchBinary()">01001000 01000101 01001100 01001100 01001111</h1>
-      <p>Web Server Running...</p>
+      <p>Web Server Running<span id="dots"></span></p>
     </div>
 
     <script>
@@ -61,6 +52,19 @@
         const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(binaryCode)}`;
         window.open(searchUrl, '_blank');
       }
+
+      // Add this new function for the loading dots
+      function animateDots() {
+        const dots = document.getElementById('dots');
+        let count = 0;
+        setInterval(() => {
+          dots.textContent = '.'.repeat(count % 4);
+          count++;
+        }, 500);
+      }
+
+      // Call the function when the page loads
+      window.onload = animateDots;
     </script>
   </body>
 </html>
