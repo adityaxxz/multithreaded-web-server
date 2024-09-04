@@ -2,14 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Adele • Hello</title>
+    <title>web-server//port:7878</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        animation: glow 5s infinite ease-in-out;
+      }
+      h1 {
+        color: #333;
+        transition: color 0.3s ease;
+        cursor: pointer; /* Add this line to show it's clickable */
+      }
+      h1:hover {
+        animation: flicker 2s forwards;
+      }
+      @keyframes flicker {
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+          filter: drop-shadow(0px 0px 12px rgb(21, 227, 221));
+          opacity: 1;
+        }
+        15%, 20%, 24% {       
+          filter: none;
+          opacity: .3;
+        }
+      }
+      @keyframes glow {
+        0%, 100% {
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        50% {
+          box-shadow: 0 0 30px rgb(21, 227, 221);
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello! Its me</h1>
-    <p>Hello from the outside</br>
-        At least I can say that I've tried</br>
-        To tell you I'm sorry for breaking your heart</br>
-        But it don't matter, it clearly doesn't tear you apart anymore</br>
-    </p>
+    <div class="container">
+      <h1 onclick="searchBinary()">01001000 01000101 01001100 01001100 01001111</h1>
+      <p>Web Server Running...</p>
+    </div>
+
+    <script>
+      function searchBinary() {
+        const binaryCode = "01001000 01000101 01001100 01001100 01001111";
+        const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(binaryCode)}`;
+        window.open(searchUrl, '_blank');
+      }
+    </script>
   </body>
 </html>
