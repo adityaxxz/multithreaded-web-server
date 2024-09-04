@@ -29,6 +29,11 @@ Published on crates.io : [crates.io/adra_multi_threaded_web_server](https://crat
 5. Access the server at `http://localhost:7878`
 
 
+![2024-09-04 12-06-56](https://github.com/user-attachments/assets/35a96cc5-cc69-4241-a578-2dec8d603830)
+
+
+
+
 <!--
 ## Implementation Details
 
