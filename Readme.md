@@ -8,21 +8,28 @@ Published on crates.io : [crates.io/adra_multi_threaded_web_server](https://crat
 
 ## Features
 
-- Multi-threaded architecture using a thread pool
-- TCP listener for handling incoming connections
-- Serves static HTML files (index.html, 404.html)
-- Basic HTTP response formatting
+- Multi-threaded architecture using a thread pool.
+- TCP listener for handling incoming connections.
+- Serves static HTML files (index.html, 404.html).
+- Basic HTTP response formatting.
 
-## Usage
+## Usage 
 
-1. Clone the repository
+ > Prerequisite is to install rust-lang using [rustup](https://www.rust-lang.org/tools/install)
+
+1. Clone the repository 
+   ```
+      git clone https://github.com/adityaxxz/multithreaded-web-server.git
+      cd multithreaded-web-server
+   ```
 2. Run the server:
-
    ```
-   cargo run
+      cargo run
    ```
-3. Access the server at `http://localhost:7878`
+5. Access the server at `http://localhost:7878`
 
+
+<!--
 ## Implementation Details
 
 ### Thread Pool
@@ -64,6 +71,12 @@ Published on crates.io : [crates.io/adra_multi_threaded_web_server](https://crat
 - Efficient handling of concurrent requests
 - Potential for future improvements (e.g., connection pooling, caching)
 
+### Response Format
+
+- HTTP-Version Status-Code Reason-Phrase CRLF  //example: HTTP/1.1 200 OK\r\n\r\n
+- headers CRLF
+- message-body
+
 
 ## Files
 
@@ -71,11 +84,11 @@ Published on crates.io : [crates.io/adra_multi_threaded_web_server](https://crat
 - `src/lib.rs`: Thread pool implementation
 - `index.html`: Home page
 - `404.html`: Not Found page
-
+-->
 ## Contributing
 
 Contributions are welcome! Please submit a pull request or create an issue for any bugs or feature requests.
 
-## License
+## License 
 
 [MIT License](LICENSE)
