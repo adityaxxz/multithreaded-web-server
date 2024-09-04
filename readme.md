@@ -93,7 +93,3 @@ Published on crates.io : [crates.io/adra_multi_threaded_web_server](https://crat
 ## Contributing
 
 Contributions are welcome! Please submit a pull request or create an issue for any bugs or feature requests.
-
-## License 
-
-[MIT License](LICENSE)
