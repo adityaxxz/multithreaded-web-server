@@ -23,7 +23,7 @@
       h1 {
         color: #333;
         transition: color 0.3s ease;
-        cursor: pointer; /* Add this line to show it's clickable */
+        cursor: pointer; /* making header clickable */
       }
       h1:hover {
         animation: flicker 2s forwards;
@@ -53,7 +53,7 @@
         window.open(searchUrl, '_blank');
       }
 
-      // Add this new function for the loading dots
+      
       function animateDots() {
         const dots = document.getElementById('dots');
         let count = 0;
@@ -63,7 +63,7 @@
         }, 500);
       }
 
-      // Call the function when the page loads
+      
       window.onload = animateDots;
     </script>
   </body>
