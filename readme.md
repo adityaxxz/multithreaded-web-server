@@ -2,7 +2,7 @@
 
 Implementation : [rust-book.cs.brown.edu](https://rust-book.cs.brown.edu/ch20-00-final-project-a-web-server.html)
 
-Published on crates.io : [crates.io/adra_multi_threaded_web_server](https://crates.io/crates/adra_multi_threaded_web_server)
+[![Crates.io](https://img.shields.io/badge/crates.io-v0.1.0-green)](https://crates.io/crates/adra_multi_threaded_web_server)
 
 ### A simple, multi-threaded web server implemented in Rust.
 
